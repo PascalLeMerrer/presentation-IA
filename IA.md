@@ -16,8 +16,9 @@ A charge, et c'est assumé
 -->
 
 <!-- end_slide -->
+
 <!-- jump_to_middle -->
-Impact environnemental
+<span style="color: #4DEDED; background-color: #264F4F;">  1. Impact environnemental  </span>
 ===
 
 <!-- end_slide -->
@@ -137,7 +138,7 @@ Consommation d'eau
 <!-- end_slide -->
 <!-- jump_to_middle -->
 
-Impact sur le web ouvert
+<span style="color: #4DEDED; background-color: #264F4F;">  2. Impact sur le web ouvert  </span>
 ===
 
 <!-- end_slide -->
@@ -164,7 +165,7 @@ Interruptions de service à cause des scrapers
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
-IA et développement logiciel
+<span style="color: #4DEDED; background-color: #264F4F;">  3. IA et développement logiciel  </span>
 ===
 <!-- end_slide -->
 
@@ -291,7 +292,7 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_
 
 
 <!-- jump_to_middle -->
-Qualité des contenus générés
+<span style="color: #4DEDED; background-color: #264F4F;">  4. Qualité des contenus générés  </span>
 ===
 <!-- end_slide -->
 
@@ -322,10 +323,8 @@ Sur quoi va-t-on entraîner les modèles dans quelques années ?
 -->
 
 <!-- end_slide -->
-
-
 <!-- jump_to_middle -->
-Problèmes éthiques
+<span style="color: #4DEDED; background-color: #264F4F;">  5. Problèmes éthiques  </span>
 ===
 
 
@@ -455,19 +454,22 @@ Exploitation des data workers
 
 <!-- end_slide -->
 
-Conclusion
+<!-- jump_to_middle -->
+<span style="color: #4DEDED; background-color: #264F4F;">  6. Conclusion  </span>
+===
+<!-- end_slide -->
+
+Récupitualtif
 ===
 
 <!-- incremental_lists: true -->
-* impact environnemental énorme
-* impact sur le web ouvert
-* perte de compétences
-* baisse de performance
-* aucun respect de la propriété intellectuelle
-* société de surveillance
-* exploitation des data workers
-
-
+* Impact environnemental énorme
+* Mise en danger du web ouvert
+* Perte de compétences
+* Baisse de performance
+* Aucun respect de la propriété intellectuelle
+* Société de surveillance
+* Exploitation des data workers
 
 <!-- speaker_note: |
 C'est un nouveau pétrole :
