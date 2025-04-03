@@ -8,7 +8,7 @@ Disclaimer
 ===
 
 <!-- jump_to_middle -->
-A charge, et c'est assumé
+À charge, et c'est assumé
 
 
 <!-- speaker_note: |
@@ -43,7 +43,7 @@ Ce qu'on trouve dans leurs rapports
 
 ![](emissions-cloud.png)
 
-<span style="color: #AAAAAA;">Source: Financial Times
+<span style="color: #AAAAAA;">Source : Financial Times
 https://www.ft.com/content/2d6fc319-2165-42fb-8de1-0edf1d765be3</span>
 
 <!-- speaker_note: |
@@ -68,7 +68,7 @@ Des objectifs non tenus
 
 <!-- incremental_lists: true -->
 * Microsoft +30% de 2020 à 2023
-* Google +48%  depuis 2019
+* Google +48% depuis 2019
 
 <!-- speaker_note: |
   Dans leurs rapport environnentaux, les GAFAM avoouent ne pas avoir tenus leurs objectifs de réduction de CO2 en grande partie à cause des IA génératives
@@ -124,12 +124,12 @@ Et ça ne va pas s'arranger
 Consommation d'eau
 ===
 
-* 20 à 50 questions à ChatGPT consomment 0,5 l d'eau
+* 20 à 50 questions à ChatGPT consomment 0,5 L d'eau
 <!-- pause -->
 * consommation d'eau de l'IA > celle du Danemark en 2027
 
 <!-- pause -->
-<span style="color: #AAAAAA;">Pengfei Li et al., «Making AI Less “Thirsty”: Uncovering and Addressing the Secret Water Footprint of AI Models», arXiv, 6 avril 2023. »</span>
+<span style="color: #AAAAAA;">Pengfei Li et al., “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models”, arXiv, 6 avril 2023.</span>
 
 <!-- speaker_note: |
   TODO : minerais...
@@ -258,14 +258,14 @@ Dépendance
 
 « Nous ne deviendrons pas des développeurs 10x plus performants grâce à l'IA.
 <!-- pause -->
-Nous devenons 10 fois plus dépendants de l'IA»
+Nous devenons 10 fois plus dépendants de l'IA »
 
 <!-- pause -->
-Namanyay "AI is Creating a Generation of Illiterate Programmers"
+Namanyay “AI is Creating a Generation of Illiterate Programmers”
 
 
 <!-- speaker_note: |
-  Dans un article qui a fait le buzz, Namanway explique qu'il a remplacé
+  Dans un article qui a fait le buzz, Namanyay explique qu'il a remplacé
   la satisfaction d'apprendre par la frustration de ne pas avoir de réponse d'une IA
   au bout de 5 minutes
   Il n'apprend plus rien, il ne lit même plus les messages d'erreur, il se contente de les copier coller
@@ -285,7 +285,7 @@ L'usage de l'IA peut mener à :
 * une diminution de l'esprit critique
 * une capacité diminuée à résoudre les problèmes sans IA
 
-<span style="color: #AAAAAA;">Source: Microsoft Research
+<span style="color: #AAAAAA;">Source : Microsoft Research
 https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf</span>
 
 <!-- end_slide -->
@@ -474,8 +474,8 @@ Récupitualtif
 <!-- speaker_note: |
 C'est un nouveau pétrole :
 - tout le monde se rue sur l'IA, peu se posent des questions
-- les société qui sont derrière n'ont aucun scrupules, et n'hésitent pas à désinformer
-(ex : promesses sur les AGI, il faut bien justifier des investissement énormes)
+- les sociétés qui sont derrière n'ont aucuns scrupules, et n'hésitent pas à désinformer
+(ex : promesses sur les AGI, il faut bien justifier des investissements énormes)
 ou à cacher la vérité (les conditions de travail des data workers)
 commme les compagnies pétrolières sur le changement climatique au siècle dernier
 
