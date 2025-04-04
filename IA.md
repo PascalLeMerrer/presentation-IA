@@ -1,6 +1,6 @@
 ---
-title: "Pourquoi je n'utilise pas d'IA générative"
-sub_title: (La face sombre des IA)
+title: Le côté obscur de l'IA
+sub_title: (Pourquoi je n'utilise pas d'IA générative)
 author: Pascal Le Merrer
 ---
 
@@ -131,6 +131,15 @@ Consommation d'eau
 <!-- pause -->
 <span style="color: #AAAAAA;">Pengfei Li et al., “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models”, arXiv, 6 avril 2023.</span>
 
+<!-- end_slide -->
+
+Matériel
+===
+
+<!-- incremental_lists: true -->
+* datacenters
+* GPU
+
 <!-- speaker_note: |
   TODO : minerais...
 -->
@@ -164,19 +173,29 @@ Interruptions de service à cause des scrapers
 
 
 <!-- end_slide -->
+Impact sur Wikipedia
+===
+
+* +50% de trafic sur Wikimedia Commons depuis janvier 2024
+* 65% du trafic coûteux vient de bots
+
+
+<span style="color: #AAAAAA;">https://diff.wikimedia.org/2025/04/01/how-crawlers-impact-the-operations-of-the-wikimedia-projects/</span>
+
+<!-- end_slide -->
 <!-- jump_to_middle -->
 <span style="color: #4DEDED; background-color: #264F4F;">  3. IA et développement logiciel  </span>
 ===
 <!-- end_slide -->
 
-Pair-programming avec une IA
+Remplacer le Pair-programming par l'IA
 ===
 
 <!-- incremental_lists: true -->
 * Déconseillé
 * Pas les avantages du pair-programming
 
-<span style="color: #AAAAAA;">Thoughtworks Tech Radar #31, Octobre 2024</span>
+<span style="color: #AAAAAA;">Thoughtworks Tech Radar #32, Avril 2025</span>
 
 
 <!-- speaker_note: |
@@ -290,7 +309,25 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_
 
 <!-- end_slide -->
 
+Génération de code
+===
 
+<!-- incremental_lists: true -->
+* Mise en garde de Thoughtworks
+* "review fatigue"
+* complaisance
+
+<span style="color: #AAAAAA;">Thoughtworks Tech Radar #32, Avril 2025</span>
+
+<!-- speaker_note: |
+* augmentation du volume de code publié (gitclear)
+* +15% de PR (Github)
+* mais augmentation des corrections, et réduction du refactoring
+* l'exemple extrême c'est le vibe coding 
+https://www.thoughtworks.com/radar/techniques/complacency-with-ai-generated-code
+-->
+
+<!-- end_slide -->
 <!-- jump_to_middle -->
 <span style="color: #4DEDED; background-color: #264F4F;">  4. Qualité des contenus générés  </span>
 ===
@@ -404,6 +441,52 @@ Propriété intellectuelle
 
 <!-- end_slide -->
 
+Solution au changement climatique
+===
+
+<!-- incremental_lists: true -->
+* IA ==> solutions au changement climatique (Microsoft)
+* Deal ExxonMobil + 50 000 barils / jour
+* Holly Alpine, lanceuse d'alerte
+
+<span style="color: #AAAAAA;">https://www.theatlantic.com/newsletters/archive/2024/09/microsoft-is-luring-fossil-fuel-companies-with-ai/679881/</span>
+
+<!-- end_slide -->
+
+Intelligence Artificielle Générale
+===
+
+<!-- incremental_lists: true -->
+* définition pas claire
+* ~ un programme qui raisonnerait comme un humain
+* le Saint-Graal pour les créateurs d'IA
+* présenté comme imminent à chaque progrès significatif en IA
+* Sam Altman a annoncé un coût de 5000 à 7000 Milliards 
+
+<!-- speaker_note: |
+  La faisabilité d'une AGI est très hypothétique
+  Elle est annoncée pour dans 5 ans par certains, alors que
+  Sam 
+-->
+<!-- end_slide -->
+
+Bulle financière
+===
+
+<!-- incremental_lists: true -->
+* Le monde de la finance s'interroge
+* Beaucoup de similitudes avec la bulle internet
+
+
+<!-- speaker_note: |
+  Euphorie collective
+  Valorisations excessives
+  Promesses de révolution technolgique
+  Sous-estimation des risques
+-->
+
+<!-- end_slide -->
+
 Société de surveillance
 ===
 
@@ -426,7 +509,12 @@ Data workers
 
 <!-- incremental_lists: true -->
 * L'entrainement est en grande partie manuel
-* 100 à 450 millions de data workers
+* 150 à 430 millions de data workers en 2023
+
+<span style="color: #AAAAAA;">Estimation de la banque mondiale</span>
+<!-- speaker_note: |
+Google estime à près d'un milliard, potentiellement, dans les années à venir, le nombre de data workers, d'annotateurs de la donnée, nécessaires pour faire fonctionner ces IA.
+-->
 
 <!-- end_slide -->
 
@@ -488,11 +576,8 @@ J'aurais aussi pu parler...
 ===
 
 <!-- incremental_lists: true -->
-* des ressources matérielles requises pour les datacenters
 * des problèmes de sécurité
 * du culte de l'IA
-* de la bulle financière
-* de l'arnaque de l'Intelligence Artificielle Générale
 
 <!-- end_slide -->
 
