@@ -1,24 +1,36 @@
 ---
-title: Le côté obscur de l'IA
-sub_title: (Pourquoi je n'utilise pas d'IA générative)
-author: Pascal Le Merrer
+theme:
+  override:
+    palette:
+      classes:
+        source:
+          foreground: "AAAAAA"
+        section-title:
+          background: "264F4F"
+          foreground: "4DEDED"
 ---
+
+
+<!-- jump_to_middle -->
+![](title.png)
+
+<!-- new_lines: 2 -->
+<!-- alignment: center -->
+Pascal Le Merrer
+
+<!-- end_slide -->
 
 Disclaimer
 ===
 
 <!-- jump_to_middle -->
+<!-- alignment: center -->
 À charge, et c'est assumé
-
-
-<!-- speaker_note: |
-  TODO https://academia.hypotheses.org/58766
--->
 
 <!-- end_slide -->
 
 <!-- jump_to_middle -->
-<span style="color: #4DEDED; background-color: #264F4F;">  1. Impact environnemental  </span>
+<span class="section-title">  1. Impact environnemental  </span>
 ===
 
 <!-- end_slide -->
@@ -32,34 +44,7 @@ Le discours des géants du cloud
 * Microsoft : "carbone négatif en 2030"
 
 
-<!-- speaker_note: |
   Bientôt la loi européenne va leur interdire ce genre d'affirmations
--->
-
-<!-- end_slide -->
-
-Ce qu'on trouve dans leurs rapports
-===
-
-![](emissions-cloud.png)
-
-<span style="color: #AAAAAA;">Source : Financial Times
-https://www.ft.com/content/2d6fc319-2165-42fb-8de1-0edf1d765be3</span>
-
-<!-- speaker_note: |
-  Le Financial Times a épluché les rapports sur la "durabilité" des cloud providers,
-  et a conclu que les chiffres sur lesquels ils communiquent sont ceux représentés en bleu
-  tandis que leurs émissions déclarées sont représentées en rouge
-  En bleu c'est la valeur compensée par des crédit carbone, c'est à dire des achats d'énergie
-  renouvelables par exemple, mais pas forcément au même endroit que là où ils consomment.
-
-  Les courbes s'arrêtent à 2022 ou 2023, ça a augmenté encore plus depuis
-
-
-  in 2022, Google operated its data center in Finland on 97% carbon-free energy; that number drops to 4–18% for its data centers in Asia
-https://hbr.org/2024/07/the-uneven-distribution-of-ais-environmental-impacts
-
--->
 
 <!-- end_slide -->
 
@@ -76,15 +61,41 @@ Des objectifs non tenus
 
 <!-- end_slide -->
 
+Ce qu'on trouve dans leurs rapports
+===
+
+![](emissions-cloud.png)
+
+<span class="source">Source : Financial Times
+
+<!-- speaker_note: |
+  https://www.ft.com/content/2d6fc319-2165-42fb-8de1-0edf1d765be3</span>
+  Le Financial Times a épluché les rapports sur la "durabilité" des cloud providers,
+  et a conclu que les chiffres sur lesquels ils communiquent sont ceux représentés en bleu
+  tandis que leurs émissions déclarées sont représentées en rouge
+  En bleu c'est la valeur compensée par des crédit carbone, c'est à dire des investisssements dans des énergies renouvelables, en rouge c'est celle qui correspondent au mix énergétique de l'endroit où sont situés les datacenters.
+
+  Les courbes s'arrêtent à 2022 ou 2023, ça a augmenté encore plus depuis
+
+
+  in 2022, Google operated its data center in Finland on 97% carbon-free energy; that number drops to 4–18% for its data centers in Asia
+https://hbr.org/2024/07/the-uneven-distribution-of-ais-environmental-impacts
+
+-->
+
+<!-- end_slide -->
+
 La réalité
 ===
 
 Les GAFAM émettent 8 fois plus que ce qu'ils avouent
 
-<span style="color: #AAAAAA;">Source : The Guardian, septembre 2024</span>
+<span class="source">Source : The Guardian, septembre 2024</span>
 
 <!-- speaker_note: |
+  le Guardian confirme ce que dit le FT
   les émissions des Gafam seraient 8 fois plus élevées que ce qu'ils disent
+  parce qu'ils achètent de l'énergie verte loin des endroits où sont implantés leur datacenters, qui consomment de l'énergie fossile.
 
 https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech
 -->
@@ -99,7 +110,7 @@ Et ça ne va pas s'arranger
 * == 40% des émissions annuelles des USA d'ici 2030
 
 <!-- pause -->
-<span style="color: #AAAAAA;">Source : Morgan Stanley</span>
+<span class="source">Source : Morgan Stanley</span>
 
 <!-- speaker_note: |
   Les émissions de CO2 des datacenters vont tripler d'ici 2030 à cause de l'IA Générative
@@ -109,8 +120,6 @@ Et ça ne va pas s'arranger
   Par contre il a été repris par des dizaines de sites web
 
   600 millions de tonnes de CO2 au lieu de 200 sans IA
-
-  By the end of the decade, the carbon footprint of U.S. data centers will equal roughly 40% of all carbon emitted in the country annually, a new report from Morgan Stanley predicts. 
 
   Les USA sont le second pays le plus émetteur https://fr.wikipedia.org/wiki/Liste_des_pays_par_%C3%A9missions_de_dioxyde_de_carbone_li%C3%A9es_%C3%A0_l%27%C3%A9nergie
 
@@ -124,14 +133,54 @@ Et ça ne va pas s'arranger
 Consommation d'eau
 ===
 
+<!-- incremental_lists: true -->
 * 20 à 50 questions à ChatGPT consomment 0,5 L d'eau
-<!-- pause -->
+* l'entraînement de GPT-3 aurait consommé 700 000 litres d’eau
+* entre 3,8 et 19 millions de litres d’eau par jour / datacenter
 * consommation d'eau de l'IA > celle du Danemark en 2027
 
-<!-- pause -->
-<span style="color: #AAAAAA;">Pengfei Li et al., “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models”, arXiv, 6 avril 2023.</span>
+<span class="source">Sources : Basta! citant le Washington Post
+et Pengfei Li et al., “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models”, arXiv, 6 avril 2023.</span>
+
+
+<!-- speaker_note: |
+  ça peut paraitre peu, mais quand OpenAI annonce plus de 100 Millions d'utilisateurs par jour, ce n'est pas négligeable
+  sources :
+  https://basta.media/comment-intelligence-artificielle-IA-data-centers-gafam-s-accaparent-eau
+  
+-->
+<!-- end_slide -->
+
+Localisation des datacenters
+===
+
+L'eau utilisée par les datacenters provient : 
+
+<!-- incremental_lists: true -->
+* à **42%** de zones en stress hydrique (Microsoft)
+* à **15%** de zones en **forte pénurie** (Google)
+
+<span class="source">Sources : Source Material et The Guardian</span>
+
+<!-- speaker_note: |
+  Amazon ne donne pas de chiffres...
+  
+  En Europe c'est en Espagne qu'ils installent leurs plus gros Datacenters alors qu'une pénurie d'eau frappe le pays
+  Microsoft a annoncé fin 2024 un investissement de 2,2 Md d'€ dans La région d'Aragon, au nord de l'Espagne, et Amazon 15 Md. Amazon y a déjà 3 datacenter géants.
+  La consommation d'eau annuelle de ces 6 datacenters représentera l'équivalent de 200 piscines olympiques rien que pour le refroidissement (on ne parle pas de l'eau utilisée pour la production d'énergie)  
+  Les trois nouveaux datacenter Amazon vont consommer plus d'électricité que toute la région à l'heure actuelle.
+
+  La construction dans des zones sèches est délibérée. Elle évite l'oxydation du matériel.
+-->
+<!--
+Sources: 
+https://www.novethic.fr/environnement/climat/avec-leurs-datacenters-amazon-microsoft-et-google-saccaparent-leau-des-regions-les-plus-seches-du-monde
+  https://www.source-material.org/amazon-microsoft-google-trump-data-centres-water-use/
+  https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water
+  -->
 
 <!-- end_slide -->
+
 
 Matériel
 ===
@@ -141,13 +190,18 @@ Matériel
 * GPU
 
 <!-- speaker_note: |
-  TODO : minerais...
+
+   Elon Musk a communiqué le 2 Septembre 2024 sur la mise en oeuvre de 100 000 GPU
+   dans un nouveau datacenter xAI (donc destiné à faire tourner Grok)
+   En décembre ce nombre est passé à 200 000
+   Sources : https://x.com/elonmusk/status/1830650370336473253
+             https://www.nextbigfuture.com/2025/02/building-the-1-2-gigawatt-xai-data-center-in-2025.html
 -->
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
 
-<span style="color: #4DEDED; background-color: #264F4F;">  2. Impact sur le web ouvert  </span>
+<span class="section-title">  2. Impact sur le web ouvert  </span>
 ===
 
 <!-- end_slide -->
@@ -161,7 +215,7 @@ Interruptions de service à cause des scrapers
   Le 17 mars 2025 Drew Devault a publié un article intitulé "Please stop externalsing you costs to my face"
 
   Il passe entre 20 et 100% de son temps à gérer des interruptions de service
-  provoqués par les crawler des IA, qui ignores les robots.txt et les instructions nofollow et font des requêtes très coûteuses,
+  provoqués par les crawler des IA, qui ignore les robots.txt et les instructions nofollow et font des requêtes très coûteuses,
   et reviennent toutes les 6 heures.
 
   Et toutes les personnes qui font le même métier que lui sont confrontées au même problème.
@@ -176,33 +230,59 @@ Interruptions de service à cause des scrapers
 Impact sur Wikipedia
 ===
 
+<!-- incremental_lists: true -->
 * +50% de trafic sur Wikimedia Commons depuis janvier 2024
 * 65% du trafic coûteux vient de bots
 
 
-<span style="color: #AAAAAA;">https://diff.wikimedia.org/2025/04/01/how-crawlers-impact-the-operations-of-the-wikimedia-projects/</span>
-
-<!-- end_slide -->
-<!-- jump_to_middle -->
-<span style="color: #4DEDED; background-color: #264F4F;">  3. IA et développement logiciel  </span>
-===
-<!-- end_slide -->
-
-Remplacer le Pair-programming par l'IA
-===
-
-<!-- incremental_lists: true -->
-* Déconseillé
-* Pas les avantages du pair-programming
-
-<span style="color: #AAAAAA;">Thoughtworks Tech Radar #32, Avril 2025</span>
-
+<span class="source">Source : Wikimedia Foundation</span>
 
 <!-- speaker_note: |
-  Dans son dernier radar technologique, Thoughtworks met en garde contre le remplacement
-  du pair programming par le codage avec une IA : on y perd une grande partie des bénéfice du pair-programming, comme la diffusion des connaissances, la propriété collective du code, la réduction du travail en cours (WIP), et plus généralement rendre l'équipe meilleure.
+Source :   
+https://diff.wikimedia.org/2025/04/01/how-cra{wlers-impact-the-operations-of-the-wikimedia-projects/
+-->
+<!-- end_slide -->
+
+Fausses failles de sécurité
+===
+
+* soumises dans le cadre de bug bounties
+
+<!-- end_slide -->
+
+<!-- jump_to_middle -->
+<span class="section-title">  3. Qualité des contenus générés  </span>
+===
+<!-- end_slide -->
+
+Baisse de qualité des études scientifiques
+===
+
+* Augmentation exponentielle des études bidons
+
+<span class="source">Source : The Register</span>
+
+<!-- speaker_note: |
+https://www.theregister.com/2025/05/13/ai_junk_science_papers/
 -->
 
+<!-- end_slide -->
+
+
+Slop
+===
+
+Sur quoi va-t-on entraîner les modèles dans quelques années ?
+
+<!-- speaker_note: |
+  Les contenus générés par IA vont dégrader la qualité des sources disponibles
+-->
+
+<!-- end_slide -->
+
+<!-- jump_to_middle -->
+<span class="section-title">  4. IA et développement logiciel  </span>
+===
 <!-- end_slide -->
 
 Impact sur les connaissances
@@ -214,6 +294,8 @@ Impact sur les connaissances
 
 <!-- speaker_note: |
   Demander systématiquement à un collègue plutôt que chercher par soi-même : on ne progresse pas
+  Exemple de John Ayre qui a reconstruit seul en 2 semaine un portail web qui avais mis 6 mois à être fait par 7 personnes la première fois
+  https://jonayre.uk/blog/2022/10/30/the-real-value-isnt-in-the-code/?utm_source=tldrwebdev
 -->
 
 <!-- end_slide -->
@@ -257,18 +339,26 @@ Que va-t-il se passer pour vous dans quelques années ?
 Impact sur les performances
 ===
 
-![](productivity.png)
-
-<!-- speaker_note: | 
   Pour 25% d'usage de l'IA pour coder :
-  * la productivité augmente seulement de 2.1%
+<!-- incremental_lists: true -->
+  * la productivité augmente de 2.1%
   * Le débit de livraison baisse de 1,5%
   * La stabilité des livraisons chute de 7,2%
 
-  L'hypthèse avancée par DORA est que l'usage de l'IA amène à mettre en prod des incréments plus gros
+<span class="source">DORA Research, Impact of Generative AI in Software Development </span>
+
+<!-- speaker_note: | 
+  L'hypothèse avancée par DORA est que l'usage de l'IA amène à mettre en prod des incréments plus gros
 -->
 
-<span style="color: #AAAAAA;">DORA Research, Impact of Generative AI in Software Development </span>
+<!-- end_slide -->
+
+L'IA résout le mauvais problème
+===
+
+"Le coût majeur du code c'est la lecture et la compréhension, pas l'écriture"
+
+Kent Beck, _tidy first?_
 
 <!-- end_slide -->
 
@@ -288,9 +378,47 @@ Namanyay “AI is Creating a Generation of Illiterate Programmers”
   la satisfaction d'apprendre par la frustration de ne pas avoir de réponse d'une IA
   au bout de 5 minutes
   Il n'apprend plus rien, il ne lit même plus les messages d'erreur, il se contente de les copier coller
-  SI ça ne marche pas, il améliore les infos fournies à l'IA, mais ne cherche plus à comprendre
-  Et quand cursor est hors service, il ne voulait même plus essayer de corriger les erreurs
+  Si ça ne marche pas, il améliore les infos fournies à l'IA, mais ne cherche plus à comprendre
+  Et quand Cursor était hors service, il ne voulait même plus essayer de corriger les erreurs
   Il dit lui même qu'après 12 ans de dev, il est devenu moins bon à cause de l'IA
+-->
+
+<!-- end_slide -->
+
+Remplacer le Pair-programming par l'IA
+===
+
+<!-- incremental_lists: true -->
+* Déconseillé
+* Pas les avantages du pair-programming
+
+<span class="source">Thoughtworks Tech Radar #32, Avril 2025</span>
+
+
+<!-- speaker_note: |
+  Thoughtworks : 12500 salariés
+  Dans son dernier radar technologique, Thoughtworks met en garde contre le remplacement
+  du pair programming par le codage avec une IA : on y perd une grande partie des bénéfice du pair-programming, comme la diffusion des connaissances, la propriété collective du code, la réduction du travail en cours (WIP), et plus généralement rendre l'équipe meilleure.
+-->
+
+<!-- end_slide -->
+
+Génération de code
+===
+
+<!-- incremental_lists: true -->
+* Mise en garde de Thoughtworks
+* "review fatigue"
+* complaisance
+
+<span class="source">Thoughtworks Tech Radar #32, Avril 2025</span>
+
+<!-- speaker_note: |
+* augmentation du volume de code publié (gitclear)
+* +15% de PR (Github)
+* mais augmentation des corrections, et réduction du refactoring
+* l'exemple extrême c'est le vibe coding 
+https://www.thoughtworks.com/radar/techniques/complacency-with-ai-generated-code
 -->
 
 <!-- end_slide -->
@@ -304,64 +432,16 @@ L'usage de l'IA peut mener à :
 * une diminution de l'esprit critique
 * une capacité diminuée à résoudre les problèmes sans IA
 
-<span style="color: #AAAAAA;">Source : Microsoft Research
-https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf</span>
-
-<!-- end_slide -->
-
-Génération de code
-===
-
-<!-- incremental_lists: true -->
-* Mise en garde de Thoughtworks
-* "review fatigue"
-* complaisance
-
-<span style="color: #AAAAAA;">Thoughtworks Tech Radar #32, Avril 2025</span>
+<span class="source">Source : Microsoft Research </span>
 
 <!-- speaker_note: |
-* augmentation du volume de code publié (gitclear)
-* +15% de PR (Github)
-* mais augmentation des corrections, et réduction du refactoring
-* l'exemple extrême c'est le vibe coding 
-https://www.thoughtworks.com/radar/techniques/complacency-with-ai-generated-code
+https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf
 -->
 
 <!-- end_slide -->
+
 <!-- jump_to_middle -->
-<span style="color: #4DEDED; background-color: #264F4F;">  4. Qualité des contenus générés  </span>
-===
-<!-- end_slide -->
-
-Mais ça marche !
-===
-
-* SWE-Lancer benchmark : réalisation de tâches pour freelances
-* 26.2% de succès
-
-
-<span style="color: #AAAAAA;">Source : OpenAI
-https://www.infoq.com/news/2025/03/openai-swe-benchmark/?</span>
-
-<!-- speaker_note: 
-OpenAI a publié en février 2025 un benchmark qui évalue la capacité d'un modèle à réaliser des tâches proposées à des freelances. Le meilleur modèle, Claude 3.5 sonnet, en a résolu 1 quart.
-
--->
-
-<!-- end_slide -->
-
-Slop
-===
-
-Sur quoi va-t-on entraîner les modèles dans quelques années ?
-
-<!-- speaker_note: |
-  Les contenus générés par IA vont dégrader la qualité des sources disponibles
--->
-
-<!-- end_slide -->
-<!-- jump_to_middle -->
-<span style="color: #4DEDED; background-color: #264F4F;">  5. Problèmes éthiques  </span>
+<span class="section-title">  5. Problèmes éthiques  </span>
 ===
 
 
@@ -375,7 +455,7 @@ Idéologie
   Philosophie de vie qui cherchent à prolonger l’évolution de la vie intelligente au-delà de sa forme et de ses limites humaines actuelles à l'aide de réalité virtuelle, intelligence artificielle, neuro-sciences, réseaux neuronaux, vie artificielle, colonisation interplanétaire...
   Larry Page, Sergei Brin, Jeff Bezos, Elon Musk, Sam Altman, Peter Thiel, Mark Zuckerberg... 
 
-  Projet politique transhumaniste: une technocratie dérégulée où les labos de recherche de la Silicon Valley décident du futur de l’espèce.
+  Projet politique transhumaniste : une technocratie dérégulée où les labos de recherche de la Silicon Valley décident du futur de l’espèce.
 
   Eugénisme
 -->
@@ -392,7 +472,7 @@ Idéologie
 <!-- speaker_note: |
   Les politiques publiques ne devraient plus remédier aux inégalités sociales et économiques actuelles, mais se concentrer sur nos descendants «posthumains», ces êtres «dont les capacités de base excéderont si radicalement celles des humains contemporains qu’elles ne peuvent être considérées humaines selon nos standards actuels
 
-   Le changement climatique, selon les long-termistes, n’est pas un problème prioritairea
+  Le changement climatique, selon les long-termistes, n’est pas un problème prioritaire
 -->
 
 <!-- end_slide -->
@@ -406,11 +486,11 @@ Idéologie
 
 * Altruisme efficace
 
-<span style="color: #AAAAAA;">Les prophètes de l'IA, Thibault Prévost</span>
+<span class="source">Les prophètes de l'IA, Thibault Prévost</span>
 <!-- speaker_note: |
   Gagner beaucoup d'argent, peu importe comment, permet de faire le bien en distribuant 10% de ses gains à des ONG identifiées comme "efficaces". Cela permet de travestir la finance spéculative et les énergies fossiles en oeuvres de bienfaisance.
 
-  Porté par une association nommée "80000 hours", dont le dirigeant en 2015 était Sam Altman.
+  Portée par une association nommée "80000 hours", dont le dirigeant en 2015 était Sam Altman.
   On trouve des EA au CA d'OpenAI. Le PDG de Deepmind est un adepte, et recrute régulièrement des EA. Le dirigeant d'Anthropic a des liens forts avec ce mouvement.
 
 -->
@@ -426,13 +506,14 @@ Propriété intellectuelle
 * Quel avenir pour l'open source ?
 
 <!-- speaker_note: |
-  Deux poids deux mesures : des gens sont allés en prison pour quelques Mo de MP3 téléchargés ou des journaux académiques (Aaron Schwartz)
-  Sci-Hub et Zlibrary font l'objet de poursuites judiciaires (par Elsevier notamment) alors qu'ils mettens à disposition des articles scientifiques,
+  <!-- Deux poids deux mesures : une mère de famille condamnée à 1,5 M$ d'amende pour avoir téléchargé 24 chanson
+  Aaron Swartz, menacé de 35 ans de prison et d'un million de $ d'amende, pour le téléchargement de 70 Go de journaux académiques, s'est suicidé
+  Sci-Hub et Zlibrary font l'objet de poursuites judiciaires (par Elsevier notamment) alors qu'ils mettent à disposition des articles scientifiques,
   des textes universitaires et des livres d'intérêt général.
   Tandis que Facebook a entrainé ses LLM sur 80 To de livres piratés et OpenAI a piraté les contenus de O'Reilly
 
 
-  Dans le sens inverse OpenAI n'hésitee pas à accuser DeepSeek de vol de propriété intellectuelle,
+  Dans le sens inverse OpenAI n'hésite pas à accuser DeepSeek de vol de propriété intellectuelle,
   ce qui est particulièrement gonflé
 
 
@@ -446,10 +527,14 @@ Solution au changement climatique
 
 <!-- incremental_lists: true -->
 * IA ==> solutions au changement climatique (Microsoft)
-* Deal ExxonMobil + 50 000 barils / jour
 * Holly Alpine, lanceuse d'alerte
+* Deal ExxonMobil + 50 000 barils / jour
 
-<span style="color: #AAAAAA;">https://www.theatlantic.com/newsletters/archive/2024/09/microsoft-is-luring-fossil-fuel-companies-with-ai/679881/</span>
+<span class="source">Source : The Atlantic</span>
+
+<!-- speaker_note: |
+https://www.theatlantic.com/newsletters/archive/2024/09/microsoft-is-luring-fossil-fuel-companies-with-ai/679881/
+-->
 
 <!-- end_slide -->
 
@@ -457,16 +542,21 @@ Intelligence Artificielle Générale
 ===
 
 <!-- incremental_lists: true -->
-* définition pas claire
 * ~ un programme qui raisonnerait comme un humain
 * le Saint-Graal pour les créateurs d'IA
 * présenté comme imminent à chaque progrès significatif en IA
 * Sam Altman a annoncé un coût de 5000 à 7000 Milliards 
+* Demande de régulation de la part de Sam Altman
 
 <!-- speaker_note: |
   La faisabilité d'une AGI est très hypothétique
-  Elle est annoncée pour dans 5 ans par certains, alors que
-  Sam 
+  Elle est annoncée pour dans 5 ans par certains, tandis qu'autres la juge impossible
+  (comme Luc Julia)
+  La réalité c'est qu'on en est loin, et que si certains Sam Altman la présentent comme
+  imminente, c'est pour attirer les investisseurs, et/ou justifier les investissement colossaux
+  qui ont été déjà faits
+  Mais aussi leurrer les politiciens de façon à ce qu'ils fassent sauter toute régulation
+  https://www.404media.co/republicans-try-to-cram-ban-on-ai-regulation-into-budget-reconciliation-bill/
 -->
 <!-- end_slide -->
 
@@ -475,14 +565,14 @@ Bulle financière
 
 <!-- incremental_lists: true -->
 * Le monde de la finance s'interroge
-* Beaucoup de similitudes avec la bulle internet
+* Beaucoup de similitudes avec la bulle Internet
 
 
 <!-- speaker_note: |
   Euphorie collective
-  Valorisations excessives
-  Promesses de révolution technolgique
+  Promesses de révolution technologique
   Sous-estimation des risques
+  Valorisations excessives (OpenAI : 300 milliards)
 -->
 
 <!-- end_slide -->
@@ -499,7 +589,7 @@ Larry Ellison
   PDG d'oracle
   2ème homme le plus riche du monde
   Au commandes du projet Stargate
-  Ferveur défenseur du transhumansimùe
+  Ferveur défenseur du transhumansime
 -->
 
 <!-- end_slide -->
@@ -511,7 +601,7 @@ Data workers
 * L'entrainement est en grande partie manuel
 * 150 à 430 millions de data workers en 2023
 
-<span style="color: #AAAAAA;">Estimation de la banque mondiale</span>
+<span class="source">Estimation de la banque mondiale</span>
 <!-- speaker_note: |
 Google estime à près d'un milliard, potentiellement, dans les années à venir, le nombre de data workers, d'annotateurs de la donnée, nécessaires pour faire fonctionner ces IA.
 -->
@@ -529,21 +619,22 @@ Exploitation des data workers
 * NDA
 * virés si syndication
 
-<span style="color: #AAAAAA;">Les sacrifiés de l'IA, en replay sur France TV</span>
+<span class="source">Les sacrifiés de l'IA, en replay sur France TV</span>
 <!-- speaker_note: |
-  - salaire volontairement bas, ne leur permet pas de sortir de la pauvreté, alors que les employeurs ont largement les moyens de les payer mieux - et qu'ils payent les développeurs une fortune
-  - soumis à des contenus / pratiques atroces
-  - ex : regarder des heures de vidéo d'un conducteur pour détecter ses moments d'inattention -> 10h00/jour, 6 jours par semaine, pour 10 € (?)
+  - salaire volontairement bas, ne leur permettant pas de sortir de la pauvreté, alors que les employeurs ont largement les moyens de les payer mieux - et qu'ils payent les développeurs une fortune
+  - ex : regarder des heures de vidéo d'un conducteur pour détecter ses moments d'inattention -> 10h00/jour, 6 jours par semaine, pour 10$/jour 
+  - soumis à des contenus atroces
   - ex : des viols d'enfants, meurtres et autres contenus du dark web : requis pour entrainer les IA à détecter ce qu'il ne faut pas faire
   - les salariés soumis à ce genre de contenu souffrent de stress post traumatique
   - un salarié explique qu'il a demandé à bénéficier de séances de psy, l'employeur a refusé car cela ferait baisser la productivité
   - un salarié a craqué et tué sa famille
+  - NDA prévoit 10 ans de prison en cas de non respect
 -->
 
 <!-- end_slide -->
 
 <!-- jump_to_middle -->
-<span style="color: #4DEDED; background-color: #264F4F;">  6. Conclusion  </span>
+<span class="section-title">  6. Conclusion  </span>
 ===
 <!-- end_slide -->
 
@@ -577,7 +668,18 @@ J'aurais aussi pu parler...
 
 <!-- incremental_lists: true -->
 * des problèmes de sécurité
-* du culte de l'IA
+
+<!-- end_slide -->
+
+
+L'avenir
+===
+
+<!-- incremental_lists: true -->
+* Large Concept Models
+* Ralentissement des constructions de datacenters
+* Klarna embauche à nouveau
+* Limiter aux usages vraiment pertinents
 
 <!-- end_slide -->
 
@@ -586,11 +688,11 @@ En savoir plus
 ===
 
 <!-- incremental_lists: true -->
-* Les sacrifiés de l'IA, en replay sur France TV
+* Les sacrifiés de l'IA, en replay sur France TV jusqu'au 17/06/2025
 * Les prophètes de l'IA, par Thibault Prévost
 
 <!-- end_slide -->
-
+  
 Références
 ===
 

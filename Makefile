@@ -4,9 +4,10 @@ present:
 notes:
 	presenterm IA.md --listen-speaker-notes
 
-# Build the Docker image required to generate the PDF
-build:
-	docker image build --tag presenterm .
-
 pdf:
-	docker run --rm --volume $PWD:/app presenterm
+	@echo "--------------------------------------------------------------------------------"
+	@echo "Requires weasy print to be installed. On MacOS, use homebrew to install it."
+	@echo "For the speaker notes to be exported, you have to remove the enclosing comments."
+	@echo "--------------------------------------------------------------------------------"
+	@echo ""
+	presenterm --export-pdf IA.md
