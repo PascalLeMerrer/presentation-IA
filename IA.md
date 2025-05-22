@@ -5,6 +5,8 @@ theme:
       classes:
         source:
           foreground: "AAAAAA"
+        notes:
+          foreground: "5DAFB3"
         section-title:
           background: "264F4F"
           foreground: "4DEDED"

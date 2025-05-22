@@ -10,4 +10,5 @@ pdf:
 	@echo "For the speaker notes to be exported, you have to remove the enclosing comments."
 	@echo "--------------------------------------------------------------------------------"
 	@echo ""
-	presenterm --export-pdf IA.md
+	python prepare-export.py
+	presenterm --export-pdf Le-côté-obscur-de-l-IA-avec-notes.md
